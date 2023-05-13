@@ -1,0 +1,1 @@
+{"version":3,"file":"build.js","sourceRoot":"","sources":["../../src/actions/build.ts"],"names":[],"mappings":";;;;;;;;;;;;;;AAAA,kDAA6B;AAC7B,0CAAkC;AAElC,cAAO,CAAC,OAAO,CAAC,OAAO,CAAC;KACrB,OAAO,CAAC,YAAY,CAAC;KACrB,QAAQ,CAAC,eAAe,CAAC;KACzB,MAAM,CAAC,GAAS,EAAE;IACjB,MAAM,IAAA,gBAAK,GAAE,CAAC;AAChB,CAAC,CAAA,CAAC,CAAC"}
