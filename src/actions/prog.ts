@@ -1,4 +1,15 @@
 import sade from "sade";
+import chalk from 'chalk';
+
+console.log(chalk.yellowBright(`
+      :::        :::::::::    :::::::::      :::::::::
+     :+:        :+:          :+:            :+:   :+:
+    +:+        +:+          +:+            +:+   +:+
+   +#+        +#++#++:     +#+    ##+#    +#+   +#+
+  +#+        +#+          +#+      #+    +#+   +#+
+ #+#        #+#          #+#      +#    #+#   #+#
+#########  ##########   ###########    #########
+`))
 
 const pkgJson = require('../../package.json');
 

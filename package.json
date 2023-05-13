@@ -2,10 +2,15 @@
   "name": "lego-cli",
   "version": "1.0.0",
   "description": "node cli for component development",
-  "main": "dist/index.js",
+  "main": "./bin/index.js",
   "bin": {
     "lego": "./bin/lego.js"
   },
+  "files": [
+    "templates",
+    "esm",
+    "bin"
+  ],
   "scripts": {
     "build": "rm -rf ./esm && tsc",
     "watch": "rm -rf ./esm && tsc --watch",
@@ -21,12 +26,19 @@
   "license": "MIT",
   "dependencies": {
     "sade": "^1.8.1",
-    "chalk": "^5.2.0",
-    "inquirer": "^9.2.2",
-    "progress-estimator": "^0.3.1"
+    "chalk": "^4.1.2",
+    "inquirer": "^7.3.3",
+    "progress-estimator": "^0.3.1",
+    "compressing": "^1.9.0",
+    "fs-extra": "^10.1.0",
+    "execa": "~5.1.1",
+    "webpack": "^5.82.1",
+    "semver": "~7.3.5",
+    "webpack-cli": "^5.1.1"
   },
   "devDependencies": {
     "typescript": "^5.0.4",
+    "@types/fs-extra": "^9.0.13",
     "@types/sade": "^1.7.4",
     "@types/chalk": "^2.2.0",
     "@types/inquirer": "^9.0.3"
