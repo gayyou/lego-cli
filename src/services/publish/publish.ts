@@ -1,6 +1,7 @@
 import {callPrompt, execCmd, resolveApp} from "../../utils";
 import prompts, {Type} from './prompt';
 import { writeJSONSync } from 'fs-extra';
+// @ts-ignore
 import semver from 'semver';
 
 export async function publish() {

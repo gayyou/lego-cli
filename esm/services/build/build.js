@@ -14,16 +14,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.build = void 0;
 const webpack_1 = __importDefault(require("webpack"));
-const path_1 = __importDefault(require("path"));
 const fs_extra_1 = require("fs-extra");
-const resolveApp = function (relativePath) {
-    const appDirectory = (0, fs_extra_1.realpathSync)(process.cwd());
-    return path_1.default.resolve(appDirectory, relativePath);
-};
+const utils_1 = require("../../utils");
 const defaultConfig = {
-    entry: resolveApp('src/index.tsx'),
+    entry: (0, utils_1.resolveApp)('src/index.tsx'),
     output: {
-        path: resolveApp('dist'),
+        path: (0, utils_1.resolveApp)('dist'),
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js', '.jsx'],
@@ -56,7 +52,7 @@ const defaultConfig = {
 function build() {
     return __awaiter(this, void 0, void 0, function* () {
         let webpackConfig;
-        const configPath = resolveApp('webpack.config.js');
+        const configPath = (0, utils_1.resolveApp)('webpack.config.js');
         if ((0, fs_extra_1.existsSync)(configPath)) {
             webpackConfig = require(configPath);
         }

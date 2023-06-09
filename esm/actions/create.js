@@ -8,16 +8,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const prog_1 = __importDefault(require("./prog"));
 const services_1 = require("../services");
-prog_1.default.command('create')
-    .example('lego create demo')
-    .describe('Create component project')
-    .action(() => __awaiter(void 0, void 0, void 0, function* () {
-    yield (0, services_1.create)();
-}));
+console.log('123123');
+function default_1() {
+    return __awaiter(this, void 0, void 0, function* () {
+        console.log('create');
+        yield (0, services_1.create)();
+    });
+}
+exports.default = default_1;
 //# sourceMappingURL=create.js.map

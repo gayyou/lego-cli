@@ -1,9 +1,7 @@
-import program from "./prog";
 import {create} from "../services";
 
-program.command('create')
-  .example('lego create demo')
-  .describe('Create component project')
-  .action(async () => {
-    await create();
-  });
+console.log('123123');
+export default async function () {
+  console.log('create');
+  await create();
+}

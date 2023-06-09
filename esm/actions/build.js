@@ -8,16 +8,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const prog_1 = __importDefault(require("./prog"));
 const services_1 = require("../services");
-prog_1.default.command('build')
-    .example('lego build')
-    .describe('Build project')
-    .action(() => __awaiter(void 0, void 0, void 0, function* () {
-    yield (0, services_1.build)();
-}));
+function buildAction() {
+    return __awaiter(this, void 0, void 0, function* () {
+        yield (0, services_1.build)();
+    });
+}
+exports.default = buildAction;
 //# sourceMappingURL=build.js.map

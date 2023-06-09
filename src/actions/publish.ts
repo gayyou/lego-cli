@@ -1,8 +1,5 @@
-import program from "./prog";
+import {publish} from "../services";
 
-program.command('publish')
-  .example('lego publsih')
-  .describe('Publish project')
-  .action(async () => {
-
-  });
+export default async function () {
+  await publish();
+}

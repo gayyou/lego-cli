@@ -1,3 +1,8 @@
+export enum Type {
+  LATEST = 'latest',
+  NEXT = 'next',
+}
+
 const publishTypeChoice = {
   type: 'list',
   message: '请选择发布类型',
@@ -7,11 +12,6 @@ const publishTypeChoice = {
     { name: '测试版本', value: Type.NEXT, key: '2' },
   ],
 };
-
-export enum Type {
-  LATEST = 'latest',
-  NEXT = 'next',
-}
 
 export enum VersionChangeValue {
   major = 'major',
